@@ -1,0 +1,71 @@
+$card_width: 200;
+$card_height: $card_width * 1.3;
+
+$card_margin: 25;
+
+$nav_card_width: 5;
+$nav_card_height: 6;
+
+$nav_width: ($card_width + $card_margin) * $nav_card_width;
+$nav_height: ($card_height + $card_margin) * $nav_card_height;
+
+
+body {
+	font: 16px/24px "Helvetica Neue", Arial, sans-serif;
+	color: #666;
+}
+
+a {
+	color: #6699ff;
+}
+
+.nav_holder {
+	margin: 2em 3em;
+	list-style: none;
+	padding: 0;
+	width: $nav_width;
+
+	ul{
+		display: inline-block;
+	}
+
+	li {
+		margin-left: #{$card_margin}px;
+		margin-top: #{$card_margin}px;
+		width: #{$card_width}px;
+		height: #{$card_height}px;
+		background: #d1d1d1;
+		float: left;
+	}
+
+	li.wide {
+		width: #{$card_width * 2 + $card_margin}px;
+	}
+
+	a{
+		display: block;
+		height: #{$card_height - 3}px;
+	}
+}
+
+.selected {
+	color: white;
+	text-decoration: none;
+	border: 3px solid #36f;
+	padding: -3px;
+}
+
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */

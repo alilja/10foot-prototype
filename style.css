@@ -1,0 +1,54 @@
+body {
+  font: 16px/24px "Helvetica Neue", Arial, sans-serif;
+  color: #666; }
+
+a {
+  color: #6699ff; }
+
+.nav_holder {
+  margin: 2em 3em;
+  list-style: none;
+  padding: 0;
+  width: 1125; }
+  .nav_holder ul {
+    display: inline-block; }
+  .nav_holder li {
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 200px;
+    height: 260px;
+    background: #d1d1d1;
+    float: left; }
+  .nav_holder li.wide {
+    width: 425px; }
+  .nav_holder a {
+    display: block;
+    height: 257px; }
+
+.selected {
+  color: white;
+  text-decoration: none;
+  border: 3px solid #36f;
+  padding: -3px; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+/* close commented backslash hack */
+
+/*# sourceMappingURL=style.css.map */
