@@ -5,11 +5,14 @@ body {
 a {
   color: #6699ff; }
 
+#top {
+  margin-top: 0px; }
+
 .nav_holder {
-  margin: 2em 3em;
+  margin: 0 auto;
   list-style: none;
   padding: 0;
-  width: 1125; }
+  width: 900; }
   .nav_holder ul {
     display: inline-block; }
   .nav_holder li {
@@ -19,17 +22,47 @@ a {
     height: 260px;
     background: #d1d1d1;
     float: left; }
+    .nav_holder li .bottom {
+      display: block;
+      margin-top: 50px;
+      font-size: 0.8em;
+      float: auto; }
+      .nav_holder li .bottom .bottom-bar {
+        display: inline-block;
+        margin-right: 15px;
+        float: left; }
+      .nav_holder li .bottom img {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle; }
   .nav_holder li.wide {
     width: 425px; }
   .nav_holder a {
     display: block;
-    height: 257px; }
+    height: 250px;
+    padding: 5px; }
+  .nav_holder #current-page {
+    border: 1px solid;
+    text-decoration: none; }
+  .nav_holder .top-bar {
+    width: 900px;
+    display: block; }
+    .nav_holder .top-bar li {
+      width: 195px;
+      height: 60px;
+      margin-bottom: 50px;
+      font-size: 2em;
+      background: none;
+      line-height: 1.5em;
+      text-align: center; }
+    .nav_holder .top-bar a {
+      height: 50px; }
 
 .selected {
-  color: white;
+  color: #fff;
   text-decoration: none;
-  border: 3px solid #36f;
-  padding: -3px; }
+  background: #36f; }
 
 .clearfix:after {
   visibility: hidden;
@@ -50,5 +83,46 @@ a {
   display: block; }
 
 /* close commented backslash hack */
+.blocker {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: center; }
+
+.blocker:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.05em; }
+
+.modal {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 2;
+  width: 700px;
+  background: #fff;
+  padding: 15px 30px;
+  text-align: left; }
+  .modal img {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle; }
+  .modal .bottom-bar {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 25px; }
 
 /*# sourceMappingURL=style.css.map */
