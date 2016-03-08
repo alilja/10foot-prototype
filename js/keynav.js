@@ -107,6 +107,7 @@ var modal_open = false;
 		}
 
 		function setCurrent(i,j) {
+			current.parent().children().eq(1).css("display","none")
 			if (i<0) i=(matrix.length-1);
 			if (i>=matrix.length) i=1;
 			if (j<0) j=(matrix[i].length-1);
@@ -117,6 +118,7 @@ var modal_open = false;
 			x=i;
 			y=j;
 			console.log("setcurrent")
+			current.parent().children().eq(1).css("display","block");
 			if(!isElementInViewport(current)){
 				if(x == 1){
 					$("#top").goTo();

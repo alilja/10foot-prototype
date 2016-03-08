@@ -43,10 +43,13 @@ a {
 		float: left;
 
 		.bottom{
-			display: block;
-			margin-top: 50px;
+			display: none;
+			position: relative;
+			bottom: 27px;
+			left: 4px;
 			font-size: 0.8em;
 			float: auto;
+			color: #fff;
 
 			.bottom-bar{
 				display: inline-block;

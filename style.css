@@ -23,10 +23,13 @@ a {
     background: #d1d1d1;
     float: left; }
     .nav_holder li .bottom {
-      display: block;
-      margin-top: 50px;
+      display: none;
+      position: relative;
+      bottom: 27px;
+      left: 4px;
       font-size: 0.8em;
-      float: auto; }
+      float: auto;
+      color: #fff; }
       .nav_holder li .bottom .bottom-bar {
         display: inline-block;
         margin-right: 15px;
