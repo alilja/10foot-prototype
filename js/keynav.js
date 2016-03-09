@@ -172,13 +172,19 @@ var modal_open = false;
 					// down
 					setCurrent(x+1,y);
 					e.preventDefault();
-				} else if (e.keyCode == 13) {
-					console.log(x+", "+y)
-					$('#'+x+y).modal();
-					modal_open = true;
+				} else if (e.keyCode == 13 || e.keyCode == 88) { // return or x
+					if(x == 0){
+						window.location = current.attr('href');
+					} else {
+						console.log(x+", "+y)
+						$('#'+x+y).modal();
+						modal_open = true;
+					}
 					e.preventDefault();
 				} else if(e.keycode == 67){  // c
 					console.log("c");
+				}  else if(e.keyCode == 90){  // z
+					console.log("z");
 				}
 			}
 		});

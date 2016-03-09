@@ -25,7 +25,7 @@ a {
 }
 
 .nav_holder {
-	margin: 0 auto;
+	margin: 50px auto 500px;
 	list-style: none;
 	padding: 0;
 	width: $nav_width;
@@ -34,9 +34,15 @@ a {
 		display: inline-block;
 	}
 
+	h1{
+		display: block;
+		margin-bottom: 10px;
+		line-height: 1.5em;
+	}
+
 	li {
 		margin-left: #{$card_margin}px;
-		margin-top: #{$card_margin}px;
+		margin-bottom: #{$card_margin}px;
 		width: #{$card_width}px;
 		height: #{$card_height}px;
 		background: #d1d1d1;
@@ -63,6 +69,12 @@ a {
 			  	display: inline-block;
 			  	vertical-align: middle;
 			}
+		}
+
+		aside{
+			margin-top: 10px;
+			font-size: .8em;
+			font-style: italic;
 		}
 	}
 

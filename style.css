@@ -9,15 +9,19 @@ a {
   margin-top: 0px; }
 
 .nav_holder {
-  margin: 0 auto;
+  margin: 50px auto 500px;
   list-style: none;
   padding: 0;
   width: 900; }
   .nav_holder ul {
     display: inline-block; }
+  .nav_holder h1 {
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1.5em; }
   .nav_holder li {
     margin-left: 25px;
-    margin-top: 25px;
+    margin-bottom: 25px;
     width: 200px;
     height: 260px;
     background: #d1d1d1;
@@ -39,6 +43,10 @@ a {
         height: 20px;
         display: inline-block;
         vertical-align: middle; }
+    .nav_holder li aside {
+      margin-top: 10px;
+      font-size: .8em;
+      font-style: italic; }
   .nav_holder li.wide {
     width: 425px; }
   .nav_holder a {
