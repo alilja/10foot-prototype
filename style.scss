@@ -24,6 +24,70 @@ a {
 	margin-top: 0px;
 }
 
+#launch{
+	width: $nav_width;
+	margin: 0px auto;
+	display: block;
+	height: 300px;
+
+	#image{
+		display: block;
+		float: left;
+		width: 300px;
+		height: 300px;
+		margin-left: $card_margin;
+		background: #d1d1d1;
+	}
+
+	#meta-container{
+		width: #{$nav-width - 300 - 2 * $card_margin}px;
+		margin-left: #{$card_margin * 2 + 300}px;
+		height: 300px;
+		display: block;
+
+		h2{
+			margin-bottom: 2px;
+			font-size: 3em;
+			line-height: 1.2em;
+			text-indent: -3px;
+		}
+
+		#description{
+			font-size: 0.9em;
+			line-height: 1.3em;
+			margin-bottom: 5px;
+			display: block;
+		}
+
+		#ratings{
+			display: block;
+			font-size: 1em;
+			margin-bottom: 5px;
+		}
+
+		#watch{
+			width: 125px;
+			height: 40px;
+			background: #d1d1d1;
+			text-align: center;
+			padding-top: 15px;
+			position: absolute;
+			bottom: 290;
+		}
+
+		#share{
+			width: 125px;
+			height: 40px;
+			background: #d1d1d1;
+			text-align: center;
+			padding-top: 15px;
+			position: absolute;
+			left: 660;
+			bottom: 290;
+		}
+	}
+}
+
 .nav_holder {
 	margin: 50px auto 500px;
 	list-style: none;
@@ -98,7 +162,7 @@ a {
 		display: block;
 
 		li{
-			width: #{($nav_width / 4) - 30}px;
+			width: #{($nav_width / 3) - 30}px;
 			height: 60px;
 			margin-bottom: 50px;
 			font-size: 2em;

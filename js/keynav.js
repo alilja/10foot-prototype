@@ -150,13 +150,19 @@ var modal_open = false;
 				} else if (e.keyCode == 13) {
 					$.modal.close();
 					modal_open = false;
-				} else if(e.keyCode == 90){  // z
+				} else if(e.keyCode == 88){  // x
 					console.log("z");
-				} else if(e.keycode == 88){  // x
+				} else if(e.keycode == 90){  // z
 					console.log("x");
 				}
 			} else {
-				if (e.keyCode == 37) {
+				if(e.keyCode == 67){  // c
+					console.log("c");
+				} else if (e.keyCode == 27){
+					window.history.back();
+				} else if(e.keyCode == 88){  // x
+					console.log("x");
+				} else if (e.keyCode == 37) {
 					// left
 					setCurrent(x,y-1);
 					e.preventDefault();
@@ -172,8 +178,9 @@ var modal_open = false;
 					// down
 					setCurrent(x+1,y);
 					e.preventDefault();
-				} else if (e.keyCode == 13 || e.keyCode == 88) { // return or x
-					if(x == 0){
+				} else if (e.keyCode == 13 || e.keyCode == 90) { // return or z
+					console.log(current.attr('class'));
+					if(x == 0 || current.attr('class') == "media selected"){
 						window.location = current.attr('href');
 					} else {
 						console.log(x+", "+y)
@@ -181,10 +188,6 @@ var modal_open = false;
 						modal_open = true;
 					}
 					e.preventDefault();
-				} else if(e.keycode == 67){  // c
-					console.log("c");
-				}  else if(e.keyCode == 90){  // z
-					console.log("z");
 				}
 			}
 		});
